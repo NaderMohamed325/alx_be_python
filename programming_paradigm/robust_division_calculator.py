@@ -1,13 +1,14 @@
-class robust_division_calculator:
-    def safe_divide(numerator, denominator):
-        try:
-            num = float(numerator)
-            den = float(denominator)
+# robust_division_calculator.py
 
-            if den == 0:
-                return "Error: Cannot divide by zero."
+def safe_divide(numerator, denominator):
+    try:
+        num = float(numerator)
+        den = float(denominator)
 
-            return num / den
+        if den == 0:
+            return "Error: Cannot divide by zero."
 
-        except ValueError:
-            return "Error: Please enter numeric values only."
+        return f"The result of the division is {num / den}"
+
+    except ValueError:
+        return "Error: Please enter numeric values only."
