@@ -1,5 +1,4 @@
 class RobustDivisionCalculator:
-    @staticmethod
     def safe_divide(numerator, denominator):
         try:
             num = float(numerator)
