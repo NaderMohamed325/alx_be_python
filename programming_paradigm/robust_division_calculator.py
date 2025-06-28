@@ -11,4 +11,4 @@ class RobustDivisionCalculator:
             return num / den
 
         except ValueError:
-            return "Error: Invalid input. Please enter numeric values."
+            return "Error: Please enter numeric values only."
